@@ -1,6 +1,5 @@
 package model.game.score;
 
-import java.util.Objects;
 
 import model.Fighter;
 import model.Side;

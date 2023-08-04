@@ -19,7 +19,7 @@ import model.Fighter;
 import model.RandomNumber;
 import model.Side;
 
-public class GameP5PreTest {
+public class GameTest {
 	PlayerFile plfRebel, plfImperial;
 	PlayerRandom plrRebel, plrImperial;
 	Reader stringReader;
@@ -195,7 +195,6 @@ public class GameP5PreTest {
 		String solution = readSolutionFromFile("files/testPlayMainImpExit.out");
 		compareLines(solution, sout);
 	}
-
 	
 	/* Game con dos PlayerRandom con 11 fighters cada uno
 	 * gana REBEL porque IMPERIAL hace 'exit'

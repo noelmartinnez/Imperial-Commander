@@ -8,6 +8,7 @@ import java.util.TreeSet;
  * Clase que maneja los rankings del juego
  * 
  * @author Noel Martinez Pomares 48771960T
+ * @param <ScoreType> objeto
  *
  */
 public class Ranking<ScoreType extends Score<?>> {

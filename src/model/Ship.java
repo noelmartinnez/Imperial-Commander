@@ -84,9 +84,7 @@ public class Ship {
  * @param r Suma una victoria con 1 y losses con -1
  * @param f caza eliminado
  */
-	public void updateResults(int r,Fighter f) {
-		Objects.requireNonNull(f);
-		
+	public void updateResults(int r,Fighter f) {		
 		if(r==1) {
 			wins++;
 		}

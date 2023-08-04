@@ -8,6 +8,7 @@ import model.Side;
  * Clase que maneja la puntuacion del jugador
  * 
  * @author Noel Martinez Pomares 48771960T
+ * @param <T> objeto 
  *
  */
 public abstract class Score<T> implements Comparable<Score<T>> {

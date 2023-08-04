@@ -2,17 +2,29 @@ package model.fighters;
 
 import model.Fighter;
 import model.Ship;
+/**
+ * new Fighter subclass
+ * @author paco
+ *
+ */
+public class TIEAdvancedFighter extends Fighter {
 
-public class SuperFighter extends Fighter {
-
-	public SuperFighter(Ship mother) {
+	/**
+	 * constructor
+	 * @param mother motherShip
+	 */
+	public TIEAdvancedFighter(Ship mother) {
 		super(mother);
 		addVelocity(10);
 		addShield(-50);
 		addAttack(5);
 	}
 
-	private SuperFighter(SuperFighter other) {
+	/**
+	 * copy constructor
+	 * @param other fighter
+	 */
+	private TIEAdvancedFighter(TIEAdvancedFighter other) {
         super(other);	
 	}
 

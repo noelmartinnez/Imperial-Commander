@@ -15,7 +15,7 @@ import model.fighters.TIEInterceptor;
 import model.fighters.XWing;
 import model.fighters.YWing;
 
-public class FighterFactoryP5PreTest {
+public class FighterFactoryTest {
 	Fighter fighter;
 	Ship ship;
 	@Before
@@ -59,12 +59,10 @@ public class FighterFactoryP5PreTest {
 		}catch (NullPointerException e) {}
 	}
 	
-	/* Se comprueba que FighterFactory.createFighter admite nuevos Fighters sin tener
-	 * que modificar el código
-	 */
+	//P5
 	@Test
-	public void testCreateSuperFighter() {
-		assertNotNull(FighterFactory.createFighter("SuperFighter", ship));	
+	public void testCreateNewFighter() {
+		assertNotNull(FighterFactory.createFighter("TIEAdvancedFighter", ship));	
 	}
 
 }

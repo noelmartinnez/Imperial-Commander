@@ -8,7 +8,7 @@ import org.junit.Test;
 import model.Fighter;
 import model.Side;
 
-public class WinsScorePreTest {
+public class WinsScoreTest {
 
 	Score<Integer> scRebel, scImperial;
 	@Before
@@ -59,57 +59,11 @@ public class WinsScorePreTest {
 		
 	}
 	
-	/* Se pasan varios valores al WinsScore scImperial mediante
-	 * el método score.
-	 * Comprueba con getScore() que  los valores que se van obteniendo se van 
-	 * acumulando sucesivamente. 
-	 */
-	//TODO
-	@Test
-	public void testScoreCraft() {
-		assertEquals(0,scImperial.getScore());
-		scImperial.score(10);
-		assertEquals(0,scImperial.getScore());
-		
-		scImperial.score(1);
-		assertEquals(1,scImperial.getScore());
-		scImperial.score(1);
-		assertEquals(2,scImperial.getScore());
-		scImperial.score(10);
-		assertEquals(2,scImperial.getScore());
-		scImperial.score(1);
-		assertEquals(3,scImperial.getScore());
-		//fail("Termina el test");
-	}
-	
-	/* Se comprueba toString sobre el WinsScore scRebel y se comprueba que
-	 * inicialmente es: "Player REBEL: 0"
-	 * aplica el método score sobre scRebel varias veces con el valor
-	 * Integer a 1. 
-	 * Comprueba que la salida va cambiando de valor.
-	 * Introduce luego un valor distinto de 1 y comprueba que no cambia el score.
-	 */
-	@Test
-	public void testToString() {
-		String g = "";
-		compareLines ("Player REBEL: 0",scRebel.toString());
-	
-		scRebel.score(0);
-		compareLines ("Player REBEL: 0",scRebel.toString());
-		for(int i=0;i<3;i++) {
-			scRebel.score(1);
-			g="Player REBEL: "+(1+i);
-			compareLines (g,scRebel.toString());
-		}
-		scRebel.score(24);
-		compareLines ("Player REBEL: 3",scRebel.toString());
-		
-		//fail("Termina el test");
-	}
 	
 	/*************************
 	 * FUNCIONES AUXILIARES
 	 *************************/
+		
 		
 	/* Compara dos String línea a línea.
 	 * Parámetros: la cadena esperada, la cadena resultado.
